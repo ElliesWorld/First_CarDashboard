@@ -34,8 +34,8 @@ Canvas::Canvas(QWidget *parent)
     rightArrowTimer.start(); // Start the timer
 
     // Initialize sound effect
-    QString soundPath = QDir::currentPath() + "/../res/car-blinker.wav";
-    QString warningSoundPath = QDir::currentPath() + "/../res/squeaky.wav";
+    QString soundPath = QDir::currentPath() + "/res/car-blinker.wav";
+    QString warningSoundPath = QDir::currentPath() + "/res/squeaky.wav";
 
     soundEffect.setSource(QUrl::fromLocalFile(soundPath));
     soundEffect.setVolume(0.5f);
