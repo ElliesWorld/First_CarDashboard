@@ -20,5 +20,6 @@ add_executable(Client main.cpp src/canvas.cpp src/window.cpp ${MOC_SOURCES})
 #target_link_libraries(Client Qt6::Widgets)
 target_link_libraries(Client Qt6::Widgets Qt6::Multimedia)
 
-
-
+#Ensure the sound file is copied to the output directory
+file(COPY ${CMAKE_SOURCE_DIR}/res/squeaky.wav DESTINATION ${CMAKE_BINARY_DIR}/res)
+file(COPY ${CMAKE_SOURCE_DIR}/res/car-blinker.wav DESTINATION ${CMAKE_BINARY_DIR}/res)
